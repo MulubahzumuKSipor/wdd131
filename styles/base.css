@@ -1,0 +1,121 @@
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+:root{
+  --primary-color: darkred;
+  --secondary-color: black;
+  --accent1-color: green;
+  --accent2-color: rgb(88, 88, 2);
+
+  --headin-font: "Jersey 10", sans-serif;
+  --paragraph-font: "Bodoni MT Black", serif;
+
+  --nav-background-color: darkgrey;
+  --nav-hoverlink-color: var(--accent2-color);
+  --nav-hover-background-color:var(--accent1-color);
+  --nav-link-color: var(--primary-color)
+}
+
+main{
+  padding: 25px;
+  display: grid;
+  justify-content:space-evenly;
+  margin: 1rem ;
+  white-space: 1rem;
+}
+
+body{
+  font-family: var(--paragraph-font);
+  padding: 10px;
+}
+
+
+
+h1{
+  display: flex;
+  background-color: var(--primary-color);
+  justify-content: center;
+  padding: 2rem;
+  font-size: larger;
+  text-align: center;
+}
+header nav{
+  display: flex;
+  justify-content: space-evenly;
+  background-color: var(--nav-background-color);
+  padding: 25px;
+
+}
+header nav a:hover{
+  background-color: var(--nav-hover-background-color);
+  color: var(--nav-hoverlink-color);
+}
+
+.card{
+  max-width: 750px;
+    display: grid;
+    align-self: center;
+    font-size: medium;
+    text-align: left;
+    border: 3px solid darkred;
+    justify-content: right;
+    grid-column: 1;
+    border-radius: 25px;
+
+}
+.aboutme{
+  display: flex;
+  margin: 1rem;
+
+}
+.aboutme img{ 
+  display: flex;
+  max-width: 150px;
+  
+}
+.aboutme p{
+  margin: 1rem;
+  
+}
+.card2{
+  display: flex;
+  margin: 1rem;
+  justify-content: space-between;
+}
+.card2 p{
+  justify-content: space-evenly;
+}
+h2{
+  background-color: var(--primary-color);
+  text-align: center;
+  border: 10px solid var(--primary-color);
+  border-radius: 8px;
+}
+h3{
+  margin: 1.5rem;
+  text-align: center;
+  text-decoration: underline;
+}
+.webdev{
+  border-radius: 20px;
+  border: 3px solid darkred;
+  grid-column: 2;
+  max-width: 425px;
+}
+footer{
+  background-color: var(--primary-color);
+  justify-content: space-evenly;
+  padding: 25px;
+  text-align: center;
+}
+.card2 img{
+  max-width: 150px;
+  margin: 4px;
+}
+li{
+  margin: 2px;
+  align-content: center;
+}
