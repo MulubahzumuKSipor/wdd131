@@ -1,0 +1,77 @@
+*{
+    margin: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+
+}
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: burlywood;
+    border-radius: 10px;
+
+}
+
+h1{
+    font-size: larger;
+    
+}
+
+nav{
+    padding: 10px;
+    font-style: oblique;
+    background-color: burlywood;
+    font-family: 'Lucida Sans Unicode', sans-serif;
+
+}
+nav a{
+    text-decoration: solid;
+}
+
+nav a:hover{
+    background-color: brown;
+    border: 10px;
+    color: burlywood;
+    
+}
+
+nav a:link a:visited{
+    color: aquamarine;
+}
+
+main{
+    margin: 20px;
+    align-items: center;
+    padding: 5px;
+}
+h2{
+    text-align: center;
+    font-size: larger;
+}
+
+footer{
+    background-color: burlywood;
+    text-align: center;
+    border-radius: 15px;
+    justify-content: space-evenly;
+    
+}
+
+@media (min-width: 32.5em){  
+    .temple{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 0px;
+        
+        
+    }
+    .temple img{
+        max-width: 250px;  
+    }
+
+    .temple figcaption{
+        text-align: center;
+        display: inline;
+        padding: 0px;
+    }    
+}
