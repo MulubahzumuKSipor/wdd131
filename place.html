@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 - Dynamic Web Fundamentals - Mulubahzumu Kemmeh Sipor</title>
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - Odusile Olufemi. This page will contains information about where i came from">
+    <meta name="author" content="Mulubahzumu Kemmeh Sipor">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1>Liberia Our Country</h1>
+    </header>
+    <main>
+        <picture class="hero">
+            <source srcset="images/hero-large.webp" media="(min-width: 501px)">
+            <img src="images/hero-small.webp" alt="Liberia Made" width="1000">
+        </picture>
+        <section id="data-card">
+            <h2>Data</h2>
+            <table id="data-table">
+                <tbody>
+                    <tr>
+                        <td class="table-title">Area: </td>
+                        <td>111,370 km²</td>
+                    </tr>
+                    <tr>
+                        <td class="table-title">Population: </td>
+                        <td>over 5 million</td>
+                    </tr>
+                    <tr>
+                        <td class="table-title">Capital: </td>
+                        <td>Monrovia</td>
+                    <tr>
+                        <td class="table-title">Languages: </td>
+                        <td>Englsh</td>
+                    </tr>
+                    <tr>
+                        <td class="table-title">Currency: </td>
+                        <td>Liberian Dollar</td>
+                    </tr>
+                    <tr>
+                        <td class="table-title">Time Zone: </td>
+                        <td>GMT; UTC±00:00</td>
+                    </tr>
+                    <tr>
+                        <td class="table-title">Calling Code: </td>
+                        <td> +231 </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section id="weather-card">
+            <h2>weather</h2>
+            <img id="weather-icon" src="images/weather.svg" alt="weather icon">
+            <table id="weather-table">
+                <tr>
+                    <td class="table-title">Temperature: </td>
+                    <td id="temp-value">25.8°C</td>
+                </tr>
+                <tr>
+                    <td class="table-title">Precipitation: </td>
+                    <td> 85%</td>
+                </tr>
+                <tr>
+                    <td class="table-title">Wind: </td>
+                    <td>5km/h</td>
+                </tr>
+                <tr>
+                    <td class="table-title">Humidity: </td>
+                    <td>96%</td>
+                </tr>
+                <tr>
+                    <td class="table-title">Windchill: </td>
+                    <td id="windchill-factor"></td>
+                </tr>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>©2024 💲Mulubahzumu Kemmeh Sipor💲Liberia</p>
+        <p>Last Modified: <span id="year"> </span></p>
+    </footer>
+</body>
+
+</html>
