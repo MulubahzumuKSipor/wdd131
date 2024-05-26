@@ -1,0 +1,131 @@
+:root{
+    --primary-colors : #ad343e;
+    --secondary-colors : #30362f;
+    --accent-colors : #dddbf1;
+    --accent2-color : #bdf7b7;
+    --background-color : #b2cea1;
+    
+    --Title-font : "Graduate", serif;
+    --headings-font : "Alegreya", sans-serif;
+    --paragraph-font: "Times New Roman", serif;
+
+
+}
+
+*{
+    margin: 15px;
+    
+}
+
+h1{
+    background-color: var(--primary-colors);
+    color: var(--background-color);
+    font-size: 50px;
+    text-align: center;
+    border: 3px solid var(--primary-colors);
+    border-radius: 20px;
+    padding: 2rem;
+    font-family: fantasy;
+
+}
+
+.grid{
+    display: grid;
+    border: 3px ;
+    background-color: var(--secondary-colors);
+}
+.purpose{
+    display: grid;
+    grid-column: 1/3;
+    border: 2px solid darkkhaki;
+    border-radius: 20px;
+    
+}
+h2{
+    text-align: center;
+    font-family: "Graduate", Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    background-color: brown;
+    border-radius: 10px;
+}
+.purpose h2{
+    text-align: center;
+    font-family: "Graduate", Verdana, Geneva, Tahoma, sans-serif;
+}
+.purpose p{
+    color: antiquewhite;
+    font-size: large;
+}
+.scenarios h2{
+    font-family: "Graduate", Verdana, Geneva, Tahoma, sans-serif;
+}
+.scenarios li{
+    color: antiquewhite;
+    font-size: medium;
+}
+.scenarios{
+    display: grid;
+    grid-column: 3/3;
+    border: 2px solid darkkhaki;
+    border-radius: 20px;
+    
+}
+
+.colors{
+    display: grid;
+    background-color: aliceblue;
+    border-radius: 20px;
+    
+}
+
+.colors ul{
+    align-content: normal;
+    display: grid;
+}
+
+.fonts{
+    align-items: center;
+    display: grid;
+    border: 2px solid blanchedalmond;
+    border-radius: 20px;
+}
+
+.title p{
+    font-family: fantasy;
+    font-weight: 250;
+    font-size: xx-large;
+}
+
+.headings p{
+    font-family: "Graduate", Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: 250;
+    font-size: xx-large;
+}
+
+.paragraph p{
+    font-family: 'Times New Roman', Times, serif;;
+    font-weight: 250;
+    font-size: xx-large;
+}
+
+p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+    display: flex;
+}
+
+footer{
+    display: grid;
+    background-color: var(--primary-colors);
+    color: black;
+    font-size: 150px;
+    justify-content: center;
+    border: 3px solid var(--primary-colors);
+    border-radius: 20px;
+    font-family: fantasy;
+    height: auto;
+}
+footer nav{
+    font-size: medium;
+
+}
