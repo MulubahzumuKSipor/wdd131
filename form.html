@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mulubahzumu Kemmeh Sipor" >
+    <meta name="description" content="This is a standard form that can be used to get the reviews of a buyer/customer." >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>WDD 131 - Dynamic Web Fundamentals - Mulubahzumu Kemmeh Sipor Product Review Form</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/place.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> 
+        <h1>
+            Product Review
+        </h1>
+    </header>
+    <form method="get" action="review.html" class="wf1">
+        <fieldset>
+            <legend> Product Name*</legend>
+            <label >
+                <select name="product" id="product" required>
+                    <option value="">Select a Product</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset class="stars">
+            <legend>Rating*</legend>
+            <input type="radio" id="fivestar" name="stars" value="5" required><label for="fivestar"></label>
+            <input type="radio" id="fourstar" name="stars" value="4" required><label for="fourstar"></label>
+            <input type="radio" id="threestar" name="stars" value="3" required><label for="threestar"></label>
+            <input type="radio" id="twostar" name="stars" value="2" required><label for="twostar"></label>
+            <input type="radio" id="onestar" name="stars" value="1" required><label for="onestar"></label>
+        </fieldset>
+        <fieldset>
+            <legend>Date of Installation*</legend>
+            <label ><input type="date" id="installed-date" name="date" required></label>
+        </fieldset>
+        <fieldset class="feature">
+            <legend>What feature did you fine useful in the product?</legend>
+            <p>(check all that apply)</p>
+            <label ><input type="checkbox" id="feat1" name="feature" value="durability" >Durability</label>
+            <label ><input type="checkbox" id="feat2" name="feature" value="performance" >Performance</label>
+            <label ><input type="checkbox" id="feat3" name="feature" value="ease of use" >Ease of Use</label>
+            <label ><input type="checkbox" id="feat4" name="feature" value="design" >Design</label>
+        </fieldset>
+        <fieldset>
+            <legend>Written Review<span>(optional)</span></legend>
+            <label for="review"></label>
+            <textarea name="textarea" id="review" rows="4" cols="38"></textarea>
+        </fieldset>
+        <fieldset>
+            <legend>Your Name <span>(optional)</span></legend>
+            <label><input type="text" name="fname" id="fname"></label>
+        </fieldset>
+        <div class="stars"></div>
+        <button id="button" type="submit" value="product_review">Post Review</button>
+    </form>
+    <footer>
+        <p>©2024 💲Mulubahzumu Kemmeh Sipor💲Liberia</p>
+        <p>Last Modified: <span id="year"> </span></p>
+    </footer>
+</body>
+</html>
