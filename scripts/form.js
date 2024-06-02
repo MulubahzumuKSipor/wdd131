@@ -30,12 +30,12 @@ const products = [
     }
   ];
 
-const selectElement = document.querySelector("#product");
+  const selectElement = document.querySelector("#product");
 
-products.forEach(option => {
-    let newOption = document.createElement("option");
-    newOption.value = option.id;
-    newOption.text = option.name;
-
-    selectElement.appendChild(newOption);
-});
+  products.forEach(option => {
+      let newOption = document.createElement("option");
+      newOption.value = option.id;
+      newOption.text = option.name;
+  
+      selectElement.appendChild(newOption);
+  });
