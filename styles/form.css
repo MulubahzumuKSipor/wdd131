@@ -1,0 +1,176 @@
+.corinthia-regular {
+    font-family: "Corinthia", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.corinthia-bold {
+    font-family: "Corinthia", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+:root {
+	/* Color Palette */
+	--primary-color: blue;
+	--secondary-color: rgb(252, 252, 145);
+	--accent1-color: #9ef534;
+	--accent2-color: #445ba9;
+
+   /* change the values below to your chosen font(s) */
+    --heading-font: Algerian, Arial, sans-serif;
+    --paragraph-font: "corinthia", sans-serif;
+    --other-font: Helvetica, sans-serif;
+
+
+    --headline-color-on-white: #27272b; 
+    --headline-color-on-color: rgb(245, 245, 171);
+    --button-background-color: #1e7005; 
+    --paragraph-color-on-color: rgb(252, 252, 145);
+    --header-background-color: blue;
+}
+input[type="radio"] {
+	display: none;
+	position: relative;
+	caret-color: rgba(0, 0, 0, 0);
+}
+.stars {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: left;
+}
+.stars label {
+	color: #445ba9;
+	width: 30px;
+	height: 30px;
+	font-size: 2rem;
+	margin-left: 5px;
+	display: flex;
+	align-items: center;
+	caret-color: rgba(0, 0, 0, 0); 
+}
+.stars label:hover {
+	color: #000;
+}
+.stars label::before {
+	content: "\2606";
+}
+.stars input:checked ~ label::before {
+	content: "\2605";
+}
+
+* {
+	box-sizing: border-box;
+
+}
+h1 {
+	font-size: xx-large;
+}
+body {
+	height: auto;
+	display: flex;
+	flex-direction: column ;
+	place-items: center;
+	justify-content: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: large;
+	margin: 0;
+	padding: 0;
+}
+.label {
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+}
+
+#visits {
+	color: navy;
+	font-weight: bolder;
+	font-size: larger;
+}
+form {
+	background-color: var(--headline-color-on-color);
+	padding: 1rem;
+	border-radius: 6px;
+}
+fieldset {
+	margin: 2rem 0;
+	border: none;
+	padding: .5rem 2%;
+}
+.ws1 legend {
+	color: #445ba9;
+	padding: 0 .5rem;
+}
+.ws1 label {
+	display: block;
+	padding-top: 1rem;
+	font-size: .9rem;
+}
+form p, form span {
+	font-style: italic;
+}
+form p {
+	margin: -7px 0 10px 0;
+}
+input[type="text"], button[type="submit"], [type="date"]{
+	background-color: var(--headline-color-on-color);
+	display: block;
+	border: 1px solid #999;
+	border-radius: 10px;
+	padding: .75rem;
+	width: 100%;
+	max-width: 400px;
+}
+#product, [type="date"] {
+	border-left: 6px solid var(--button-background-color);
+}
+[type="text"] {
+	margin-top: 7px;
+}
+button[type="submit"] {
+	width: 96%;
+	margin: 0 auto;
+	background-color: var(--button-background-color);
+	color: var(--headline-color-on-color);
+	font-size: larger;
+	font-family: cursive, sans-serif;
+}
+input[type="textarea"] {
+	height: 70px;
+	width: 100%;
+	font-size: larger;
+}
+input[type="checkbox"] {
+	margin-right: 6px;
+}
+.feature{
+	display: flex;
+	flex-direction: column;
+}
+footer, header {
+	background-color: var(--header-background-color);
+	height: 5rem;
+	margin: 10px;
+	text-align: center;
+	font-size: 30px;
+	font-family: Algerian, sans-serif;
+	color: lightgoldenrodyellow;
+    border-radius: 20px;
+}
+footer {
+	font-size: 13px;
+}
+footer, header, form {
+	width: 100%;
+	max-width: 400px;
+}
+main.reviewed {
+	width: 400px;
+	height: 300px;
+	color: var(--headline-color-on-color);
+	background-color: #4d4040;
+	border: 2px solid #999;
+	border-radius: 6px;
+	text-align: center;
+	padding: 4.5em;
+	margin-top: 10rem;
+}
