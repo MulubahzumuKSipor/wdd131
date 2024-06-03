@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mulubahzumu Kemmeh Sipor" >
+    <meta name="description" content="This is a my final project for WDD131." >
+    <title>WDD 131 - Dynamic Web Fundamentals - Mulubahzumu Kemmeh Sipor Smalloo-Read</title>
+    <link rel="stylesheet" href="styles/read.css">
+    <script src="scripts/read.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Smalloo Read</h1>
+        <a id="menu" href="#"></a>
+        <nav class="navigation">
+            <a href="smalloo-read.html">Home</a>
+            <a href="membership.html">Apply</a>
+            <a href="about-us.html">About Us</a>
+        </nav>            
+        </ul>
+    </header>
+    <main>
+        <h1>Registration</h1>
+        <form method="get" action="thanks.html" class="wf1">
+            <fieldset>
+                <legend>
+                    Reader's Info
+                </legend>
+                <label>First Name* <input type="text" name="fname" required></label>
+                <label>Last Name* <input type="text" name="lname" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Reading Experience</legend>
+                <label><input type="radio" name="Audience"  value="beginner">Beginner</label>
+                <label><input type="radio" name="Audience"  value="intermediate">Intermediate</label>
+                <label><input type="radio" name="Audience"  value="advanced">Advanced</label>
+            </fieldset>
+
+            <fieldset>
+                <Legend>Favorite Genre</Legend>
+                <label>Favorite Genre
+                    <select name="Subject">
+                        <option value="Please Select" &#9662;> Please Select</option>
+                        <option value="Genre">Humor</option>
+                        <option value="Genre">Adventure</option>
+                        <option value="Genre">Action</option>
+                        <option value="Genre">History</option>
+                        <option value="Genre">Magical Realism</option>
+                        <option value="Genre">Romance</option>
+                        <option value="Genre">Horror</option>
+                        <option value="Genre">Mystery</option>
+                    </select>
+                </label>
+            <input type="submit" value="Apply">
+
+
+        </form>
+    </main>
+    <footer>
+        <p> 2024 | Mulubahzumu Kemmeh Sipor | Liberia</p>
+        <p id="year"> </p>
+        <p id="last"></p>
+    </footer>
+</body>
+</html>

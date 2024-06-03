@@ -1,0 +1,431 @@
+
+:root {
+    --body-background: #54acf4ac;
+    --secondary: #9eec5bef;
+    --light-on-color: #04a1b900;
+    --background: rgba(1, 2, 66, 0.89) ;
+    --text-color: rgba(5, 59, 206, 0.596);
+    --active: rgba(6, 40, 173, 0.895);
+    --nav-text: rgb(240, 245, 139);
+    --layout: solid 1px rgb(120, 235, 185);
+    --cards: rgb(233, 241, 121);
+}
+body {
+    font-family: fantasy, sans-serif;
+    background-color: var(--body-background);
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+#menu {
+    display: block;
+    font-size: 2.5rem;
+    font-weight:700;
+    text-decoration: none;
+    padding: .75rem .75rem;
+    color: var(--nav-text);
+    margin-right: 5px;
+    width: 50px;
+    height: 100vh;
+}
+#menu::before {
+    content: "≣";
+}
+
+nav a:hover, 
+nav a:active {
+    background-color: var(--active);
+}
+nav a {
+    display: none;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: var(--nav-text);
+    font-weight: 700;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+main h1 {
+    padding-top: 5px;
+    margin: 10px;
+    text-align: center;
+    font-size: x-large;
+    font-family: cursive, serif;
+}
+main p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif; 
+    margin-bottom: 1.5px;
+}
+.open a {
+    display: block;
+    width: 475px;
+    transition: 5ms;
+}
+#menu.open::before {
+    content: "⨉";
+    font-size: xx-large;
+}
+#cards {
+    width: 100%;
+    gap: 15px;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    background-color: var(--cards);
+    padding: 20px;
+    box-shadow: 0 0 40px #470101;
+}
+
+section {
+    margin: 0.15rem;
+    padding: 0.35rem;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:hover {
+    transform: scale(1.05);
+}
+
+img {
+    width: auto;
+    max-width: 325px;
+    box-shadow: 0 0 30px #600101b3;
+    height: 200px;
+    border: 1px solid #630101;
+}
+.image-container {
+    width: 350px;
+    height: 400px;
+    margin: 15px auto ;
+    background-color: var(--secondary);
+}
+.image-container span {
+    color: rgba(118, 29, 2, 0.703);
+}
+
+main {
+    grid-row: 2/3;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+    gap: 15px;
+}
+header, footer {
+    border-top: 0.5rem;
+    grid-row: 3/4;
+    background-color: var(--background) ;
+    color: var(--nav-text);
+    text-align: center;
+    padding: 10px;
+    height: 75px;
+}
+header{
+    text-align: left;
+    display: flex;
+}
+
+nav a{
+    font-size: larger;
+    height: 70px;
+    text-align: justify;
+}
+
+@media only screen and (min-width: 631px){
+        
+    .navigation {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        padding: 0;
+		width: clamp(50%, 50vw, 500px);
+	}
+	.navigation a {
+        display: inline;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 30px;
+        
+	}
+	#menu {
+		display: none;
+	}
+}
+.contactus {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+}
+
+.contactus h1 {
+    grid-column: 1/3;
+    text-align: center;
+}
+
+.info {
+    grid-column: 1/3;
+    /* justify-content: center; */
+    display: grid;
+    margin: 0 auto;
+}
+
+.map {
+    grid-column: 3/4;
+    grid-row: 1/5;
+    align-items: center;
+    justify-self: center;
+    align-items: center;
+}
+
+.contactus span {
+    font-weight: bold;
+}
+
+.contactus p {
+    text-align: left;
+}
+
+.employees {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    /* grid-template-rows: 2fr 1fr; */
+    /* border: 1px solid #0A2463; */
+    background-color: #FFFAFF;
+}
+
+.employees div {
+    grid-row: 2/3;
+    grid-column: 1/3;
+    justify-content: space-evenly;
+    align-items: end;
+}
+
+.employees figure {
+    padding: 1rem;
+}
+
+.employees figure img {
+    max-width: 250px;
+    max-height: 250px;
+    padding: 0;
+    box-shadow: 0 0 25px lightslategrey;
+}
+
+.employees figcaption {
+    padding-top: 10px;
+}
+
+.employees h2 {
+    grid-column: 1/2;
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.contactus, .employees {
+    padding: 20px 0;
+}
+form div p {
+    text-align: left;
+    padding: 1rem 0 0;
+    grid-column: 1/3;
+}
+
+form div {
+    display: grid;
+    align-items: center;
+}
+
+input[type="radio"] {
+    grid-column: 1/2;
+    justify-self: right;
+}
+
+input[type="radio"]:hover, .radiodiv label:hover {
+    cursor: pointer;
+}
+
+input[type="checkbox"] {
+    justify-self: left;
+    width: 15px;
+    height: 15px;
+}
+
+input[type="checkbox"]:hover {
+    cursor: pointer;
+}
+
+button {
+    width: 200px;
+    margin: 1rem auto;
+    font-size: larger;
+    padding: 5px;
+    border: none;
+    border-radius: 0.8rem;
+    box-shadow: 0 0 10px red;
+    background-color: darkblue;
+    color: white;
+}
+
+button:hover {
+    background-color: rgba(255, 255, 0, 0.423);
+    color: goldenrod;
+    cursor: pointer;
+}
+
+.checkboxdiv {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+    align-items: center;
+}
+
+.checkboxdiv label {
+    padding-right: 5px;
+    font-size: smaller;
+    justify-self: right;
+}
+
+.textareadiv {
+    grid-template-columns: 1fr 3fr 0.5fr;
+}
+
+.textareadiv label {
+    grid-column: 1/2;
+    align-self: start;
+    text-align: right;
+    padding-right: 5px;
+}
+
+.textareadiv textarea {
+    grid-column: 2/3;
+}
+
+.radiodiv input, textarea {
+    margin: 0.5rem 0;
+}
+form {
+    border: 2px solid blueviolet;
+    margin: 5px auto;
+    max-width: 1500px;
+    border-radius: 0.8rem;
+    display: grid;
+    padding: 1rem;
+    justify-content: center;
+    text-align: center; 
+    align-items: center;
+    background-color: lightgoldenrodyellow;
+}
+
+.wf1 fieldset{
+    margin: 2rem 0;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    padding: .5rem 2%;
+    width: 3200;
+    background-color: rgb(240, 245, 139);
+}
+
+.wf1 legend{
+    color: blue;
+    padding: 0 .5rem;
+
+}
+
+.wf1 label{
+    display: flex;
+    padding-top: 1rem;
+    padding-right: 0.5rem;
+    margin: 6px;
+    color: red;
+    font-size: .9rem;
+}
+
+.wf1 div{
+    padding-top: 1rem;
+    color: blue;
+    font-size: .9rem;
+
+}
+
+.wf1 input[type="text"],
+.wf1 input[type="tel"], 
+.wf1 input[type="email"],
+.wf1 input[type="number"],
+.wf1 input[type="url"],
+.wf1 input[type="date"]
+{
+    background-color: aquamarine;
+    display: block;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: 1rem;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 select
+{
+    background-color: aquamarine;
+    display: block;
+    border: 1px solid gray;
+    border-radius: 6px;
+    padding: .75rem;
+    color: black;
+    width: 100%;
+    max-width: 400px;
+    appearance: none;
+}
+
+.wf1 input[type="radio"], 
+.wf1 input[type="checkbox"]{
+    margin: 6px;
+
+}
+
+.wf1 input[type="submit"]{
+    border: none;
+    background-image: linear-gradient(aquamarine, blue);
+    color: black;
+    padding: .8rem;
+    border-radius: 6px;
+    width: 96%;
+    max-width: 400px;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px lightblue;
+    
+
+}
+
+.wf1 input:required{
+    border-left: 8px solid blue;
+}
+
+.wf1 input:required:valid{
+    border-left: 8px solid yellow;
+}
+:root {
+    --body-background: #54acf4ac;
+    --secondary: #9eec5bef;
+    --light-on-color: #04a1b900;
+    --background: rgba(1, 2, 66, 0.89) ;
+    --text-color: rgba(5, 59, 206, 0.596);
+    --active: rgba(6, 40, 173, 0.895);
+    --nav-text: rgb(240, 245, 139);
+    --layout: solid 1px rgb(120, 235, 185);
+    --cards: rgb(233, 241, 121);
+}
+
+#bookIcon{
+    max-width: 15%;
+    display: flex;
+    max-height: 100%;
+    box-shadow: none;
+}

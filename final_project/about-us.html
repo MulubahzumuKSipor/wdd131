@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mulubahzumu Kemmeh Sipor" >
+    <meta name="description" content="This is a my final project for WDD131." >
+    <title>WDD 131 - Dynamic Web Fundamentals - Mulubahzumu Kemmeh Sipor Smalloo-Read</title>
+    <link rel="stylesheet" href="styles/read.css">
+    
+    <script src="scripts/read.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Smalloo Read</h1>
+        <a id="menu" href="#"></a>
+        <nav class="navigation">
+            <a href="smalloo-read.html">Home</a>
+            <a href="membership.html">Apply</a>
+            <a href="about-us.html">Contact</a>
+        </nav>            
+        </ul>
+    </header>
+    <main>
+        <section class="contactus">
+            <h1>Contact Information</h1>
+            <div class="info">
+                <p><span>Address:</span> ELWA Junction, Paynesville Liberia</p>
+            </div>
+            <div class="info">
+                <p><span>Phone Number:</span> 0555-555-555</p>
+            </div>
+            <div class="info">
+                <p><span>Email:</span> someone@gmail.com</p>
+            </div>
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2037.4814910985633!2d-10.699871458823734!3d6.262793918346074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1708355203929!5m2!1sen!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+        <section class="employees">
+            <h2>Website Developer:</h2>
+            <div class="flex-box">
+                <figure id="employee1">
+                    <img loading="lazy" src="images/profile.jpg" alt="President">
+                    <figcaption>Mulubahzumu Kemmeh Sipor</figcaption>
+                </figure>
+            </div>      
+        </section>
+        <section>
+            <h2>Send Us a Message</h2>
+            <form>
+                <div class="userdetails">
+                    <label for="username">Name:</label>
+                    <input type="text" id="username" name="username">
+                </div>
+                <div class="userdetails">
+                    <label for="useremail">Email:</label>
+                    <input type="email" id="useremail" name="useremail">
+                </div>
+                <div class="radiodiv">
+                    <p>Message Purpose:</p>
+                    <input type="radio" id="gen-inq" name="message-purpose" value="General Inquiry">
+                    <label for="gen-inq">General Inquiry</label>
+                    <input type="radio" id="res-ques" name="message-purpose" value="Reservation Question">
+                    <label for="res-ques">Reservation Question</label>
+                    <input type="radio" id="web-sug" name="message-purpose" value="Website Suggestion">
+                    <label for="web-sug">Website Suggestion</label>
+                </div>
+                <div class="textareadiv">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5"></textarea>
+                </div>
+                <div class="checkboxdiv">
+                    <label for="newsletter-sub">Please subscribe me to the monthly newsletter</label>
+                    <input type="checkbox" id="newsletter-sub" name="newsletter-sub">
+                </div>
+                <button type="submit">Submit Message</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p> 2024 | Mulubahzumu Kemmeh Sipor | Liberia</p>
+        <p id="year"> </p>
+        <p id="last"></p>
+    </footer>
+</body>
+</html>
